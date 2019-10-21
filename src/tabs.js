@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import {Paper, Tabs} from '@material-ui/core';
 import Tab from '@material-ui/core/Tab';
 import Allgrid from './all';
-import Techgrid from './tech';
-import Managegrid from './manage';
 
 const groups = [
   'Technical', 'Management'
@@ -26,13 +24,13 @@ class Tabbar extends Component {
   }
   view(){
     if(this.state.value===0){
-      return <Allgrid></Allgrid>
+      return <Allgrid type="all"></Allgrid>
     }
     else if(this.state.value===1){
-      return <Techgrid></Techgrid>
+      return <Allgrid type="technical"></Allgrid>
     }
     else if(this.state.value===2){
-      return <Managegrid></Managegrid>
+      return <Allgrid type="management"></Allgrid>
     }
   }
     render() {
