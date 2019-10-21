@@ -27,7 +27,7 @@ class Allgrid extends Component {
             <Grid container sm={12}>
                 {companies.map((company)=>
                     <Grid item sm={4}>
-                    <SimpleCard title={company.name}></SimpleCard>
+                    <SimpleCard title={company.name} id={company.id}></SimpleCard>
                     </Grid>
                 )}
             </Grid>
@@ -38,7 +38,7 @@ class Allgrid extends Component {
                 <Grid container sm={12}>
                     {companies.map((company)=> company.type === "technical" ? (
                         <Grid item sm={4}>
-                        <SimpleCard title={company.name}></SimpleCard>
+                        <SimpleCard title={company.name} id={company.id}></SimpleCard>
                         </Grid>
                         ) :(null)
                         
@@ -50,7 +50,7 @@ class Allgrid extends Component {
                 <Grid container sm={12}>
                     {companies.map((company)=> company.type === "management" ? (
                         <Grid item sm={4}>
-                        <SimpleCard title={company.name}></SimpleCard>
+                        <SimpleCard title={company.name} id={company.id}></SimpleCard>
                         </Grid>
                         ) :(null)
                         

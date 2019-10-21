@@ -13,11 +13,10 @@ class SimpleCard extends Component{
     handlechange(event){
         var id=event.target.parentElement.id
         console.log(id)
-        window.location="/page?id="+id;
+        window.location="/read?id="+id;
 
     }
     render(){
-        var id_company=this.props.title
         return (
             <Card style = {style.card}>
               <CardContent>
@@ -26,7 +25,7 @@ class SimpleCard extends Component{
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" onClick={this.handlechange.bind(this)} id={id_company}>Read More</Button>
+                <Button size="small" onClick={this.handlechange.bind(this)} id={this.props.id}>Read More</Button>
               </CardActions>
             </Card>
           );

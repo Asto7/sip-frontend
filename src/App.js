@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <Router>
         <Route path="/home"   component= {Home}/>
-        <Route path="/page" component = {Api}/>
+        <Route path="/read" component = {Api}/>
 
       </Router>
     );
