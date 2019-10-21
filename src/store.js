@@ -1,24 +1,26 @@
 
- const exercises = [
-    {
-        id:'dips',
-        title:'Dips',
-        description:'Triceps',
-        muscles:'arms'
+ const companies = [
+     {
+         id:1,
+         title:"Google",
+         type:"technical"
+     },
+     {
+        id:2,
+        title:"Amazon",
+        type:"technical"
     },
     {
-        id:'push-ups',
-        title:'Push-ups',
-        description:'Chest',
-        muscles:'chest'
+        id:3,
+        title:"McKinley",
+        type:"management"
     },
     {
-        id:'bench-press',
-        title:'Bench press',
-        description:'Chest',
-        muscles:'chest'
-    }
-
+        id:4,
+        title:"P & G",
+        type:"management"
+    },
+    
 ]
 
-export default exercises;
+export default companies;
