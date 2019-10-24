@@ -45,7 +45,7 @@ class Allgrid extends Component {
                     )}
                 </Grid>
         );}
-        else{
+        else if(this.props.type==="management"){
             return (
                 <Grid container sm={12}>
                     {companies.map((company)=> company.type === "management" ? (
